@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.navBarCollapse{
+    display: block !important;
+    animation: showSlow 1s ease;
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: black;
+    z-index: 2005;
+    margin-top: 15px;
+    /* background-color: red; */
+}
+.navBarCollapse .nav-item .nav-link{
+    font-weight: bolder;
+    font-size: larger;
+    padding: 5px 110px;
+    background-color: #0a247280 !important;
+}
+.navbar{ 
+    z-index: 2010;
+    background-color: #0a247280 !important;
+    position: fixed !important;
+    right: 0;
+    left: 0;
+}
+.nav-link{
+    color: white !important;
+}
+
+/* HUMBARGAR NAVBAR */
+.humbarBar-collapse{
+    display: none !important;
+}
+.humbargerCrossBar{
+    display: none !important;
+}
+.humbargerCrossBar-show{
+    display: block !important;
+    animation: opacityShow 1s ease;
+}
+@keyframes opacityShow{
+   from{
+        opacity: 0;
+   }to{
+        opacity: 1;
+   }
+}
+
+
+@keyframes showSlow{
+    0%{
+        transform: translateY(-350px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width:1100px){
+    .home-container{
+        background-position: center;
+    }
+    .trainImageText{
+        margin-bottom: 10px !important;
+     }
+}
+
+/* FOR PHONE STAND SCREEN */
+@media screen and (max-width:450px){
+    .navBarCollapse .nav-item .nav-link{
+        color: black !important;
+        padding: 5px 100px !important;
+    }
+    .find-hotels-text{
+        display: none !important;
+    }
+    .card{
+        width: 18rem !important;
+    }
+}
+/* FOR LAPTOP AND I PAD PRO SCREEN */
+@media screen and (max-width:1920px){
+ 
+}
+/* FOR PHONE AND I-PAD ROTATE SCREEN */
+@media screen and (max-width:850px){
+    .navBarCollapse .nav-item .nav-link{
+        color: black !important;
+        padding: 5px 225px;
+    }
+    .home-container{
+        background-position: center;
+    }
+    .homeForm-container{
+        height: 92px !important;
+    }
+    .blockingInput{
+        display:none !important;
+    }
+    .home-item-btn{
+        margin-bottom: 20px;
+    }
+    .find-hotels-text{
+        font-size: 1.5rem !important;
+    }
+}
+/* HOME CONTAINER SITE */
+.home-container{
+    background-image: url('../theme/pexels-miles-hardacre-2404370.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.home-text-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.home-item{    
+    margin-bottom: 10px;
+}
+.homeForm-container{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 152px;
+    padding: 0 20px;
+    /* background-color: #ffb703 !important; */
+}
+.input-group input{
+    /* width: 30px !important; */
+    margin: 0 15px;
+}
+
+/* DESTINATION CONTAINER */
+.trainImageContainer{
+    background-image: url('../theme/pexels-krishnakant-mahamuni-1201179.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+.trainImageTextContainer{
+    background-color: #e9ecef;
+}
+.trainImageText{
+   margin-bottom: 25px;
+}
+
+
+/* DISCOUNT CONTAINER SITE */
+.discount-container{
+    background-image: url(../theme/alexander-schimmeck-H3mN3MI5eyU-unsplash.jpg);
+    background-repeat:space;
+    background-size: cover;
+    background-position:bottom;
+    position: relative;
+}
+.card{
+    margin:20px 0 !important;
+    background-color: whitesmoke !important;
+}
