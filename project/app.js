@@ -4,11 +4,14 @@ let humbargerCrossBarTag=document.getElementsByClassName('humbargerCrossBar')[0]
 
 let navbarSupportedContentTag=document.getElementById('navbarSupportedContent');
 navBarTogglerTag.addEventListener('click',()=>{
-   navbarSupportedContentTag.classList.toggle('navBarCollapse');
+   let checkNavbarCollapse=navbarSupportedContentTag.classList.toggle('navBarCollapse');
    humbargerBarTag.classList.toggle('humbarBar-collapse')
    humbargerCrossBarTag.classList.toggle('humbargerCrossBar-show')
 
 })
+
+{/* <a class="nav-link h5 active" aria-current="page" href="#">HOME</a> */}
+s
 
 
 

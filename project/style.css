@@ -7,7 +7,6 @@
 }
 .navBarCollapse{
     display: block !important;
-    animation: showSlow 1s ease;
     display: flex !important;
     flex-direction: column;
     text-align: center;
@@ -23,6 +22,25 @@
     padding: 5px 110px;
     background-color: #0a247280 !important;
 }
+.navBarCollapse .nav-home{
+    animation: showSlow 0.5s ease;
+}
+.navBarCollapse .nav-destination{
+    animation: showSlow 1s ease;
+}
+.navBarCollapse .nav-discount{
+    animation: showSlow 1.5s ease;
+}
+.navBarCollapse .nav-about{
+    animation: showSlow 2s ease;
+}
+.navBarCollapse .nav-blog{
+    animation: showSlow 2.5s ease;
+}
+.navBarCollapse .nav-contact{
+    animation: showSlow 3s ease;
+}
+
 .navbar{ 
     z-index: 2010;
     background-color: #0a247280 !important;
@@ -56,10 +74,10 @@
 
 @keyframes showSlow{
     0%{
-        transform: translateX(-350px);
+        transform: translateY(-350px);
     }
     100%{
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 @media screen and (max-width:1100px){
@@ -97,7 +115,17 @@
         flex-direction: column !important;
         align-items: center;
     }
-}
+    .travel-text{
+        font-size: 30px !important;    
+    }
+    .travelRowBtn{
+        position: absolute !important;
+        bottom: 222px !important;
+        right: 71px !important;
+        width: 151px !important;
+        border-radius: 20px !important;
+    }
+    }
 /* FOR LAPTOP AND I PAD PRO SCREEN */
 @media screen and (max-width:1920px){
  
@@ -211,3 +239,87 @@
     background-color: var(--primary);
 }
 
+
+/* TRAVEL PATH ROW */
+.travelPath{
+    background-image: url('../theme/beach.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.travelRowBtn{
+    position: absolute;
+    bottom: 222px;
+    right: 120px;
+    width: 151px;
+    border-radius: 20px !important;
+}
+.travelImage{
+    height: 265px !important;
+    border-top-right-radius: 105px;
+}
+.responsive div{
+    display: flex !important;
+    justify-content: center !important;
+}
+.responsive .card-body{
+    display: flex !important;
+    flex-direction:column !important;
+}
+.card{
+    transition: all 0.5s ;
+}
+.card:hover{
+    transform: scale(1.05) !important;
+}
+
+/* CONTACT US SITE */
+.contact-container{
+    background-image: url('../theme/fuji.jpg');
+    background-position: bottom;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.contact-bg-white{
+    /* background-color: rgb(247, 242, 234,0.7) !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 460px; */
+    display: flex;
+    /* justify-content: end; */
+}
+.contact-bg-warning{
+    /* position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+    display: flex;
+
+}
+.logo-row div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    background-color: rgb(255, 255, 0,0.3);
+    transition: all 1s ease;
+}
+.logo-row div:hover{
+    transform: scale(1.1);
+}
+.white-bg{
+    background-color: rgb(240, 233, 233,0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

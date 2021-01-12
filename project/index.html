@@ -10,13 +10,14 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 /> 
   <script src="https://kit.fontawesome.com/5e506042eb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../slick-1.8.1/slick-1.8.1/slick/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
   <title>HEIN's AGENCY</title>
 </head>
 <body>
   <div class="home-container container-fluid min-vh-100">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12" style="position: relative;">
         <nav class="navbar navbar-expand-lg navbar-light" style="height: 60px;">
           <div class="container-fluid">
             <h2><i class="fas fa-user-astronaut text-primary"></i><a class="ml-2 text-white font-weight-bolder" href="#">EXPLOORE</a></h2>
@@ -24,27 +25,28 @@
               <i class="fas fa-bars humbargerBar" style="font-size: 2rem;"></i>
               <i class="fas fa-times humbargerCrossBar"  style="font-size: 2rem;"></i>
             </div>           
-            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent" style="position: relative;"> 
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="mr-xl-5 mr-lg-2 nav-item">
+                <li class="mr-xl-5 mr-lg-2 nav-item nav-home">
                   <a class="nav-link h5 active" aria-current="page" href="#">HOME</a>
                 </li>
-                <li class="mr-xl-5 mr-lg-2 nav-item">
+                <li class="mr-xl-5 mr-lg-2 nav-item nav-destination">
                   <a class="nav-link h5" href="#">DESTINATION</a>
                 </li>
-                <li class="mr-xl-5 mr-lg-2 nav-item">
+                <li class="mr-xl-5 mr-lg-2 nav-item nav-discount">
                   <a class="nav-link h5" href="#">DISCOUNT</a>
                 </li>
-                <li class="mr-xl-5 mr-lg-2 nav-item">
+                <li class="mr-xl-5 mr-lg-2 nav-item nav-about">
                   <a class="nav-link h5" href="#">ABOUT</a>
                 </li>
-                <li class="mr-xl-5 mr-lg-2 nav-item">
+                <li class="mr-xl-5 mr-lg-2 nav-item nav-blog">
                   <a class="nav-link h5" href="#">BLOG</a>
                 </li>
-                <li class="mr-xl-5 mr-lg-2 nav-item">
+                <li class="mr-xl-5 mr-lg-2 nav-item nav-contact">
                   <a class="nav-link h5" href="#">CONTACT</a>
                 </li>
               </ul>
+              <div class="sliderTag"></div>
             </div>
           </div>
         </nav>
@@ -145,7 +147,7 @@
     <div class="row">
       <div class="col-12">
         <div class="col-12 w-100 d-flex flex-column align-items-center">
-          <h1 class="font-weight-bolder text-white rounded px-1">Trusted Since in 2001</h1>
+          <h1 class="travel-text font-weight-bolder text-white rounded px-1">Trusted Since in 2001</h1>
           <h5 class=" text-white rounded px-1">We are Travel Agent</h5>
         </div>
       </div>
@@ -220,7 +222,7 @@
       </div>
       <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center" >
         <div class="w-75 about-text-container">
-          <h1 class="font-weight-bolder display-3">Tusted Since in 2001</h1>
+          <h1 class="text-travel font-weight-bolder display-3">Trusted Since in 2001</h1>
           <h4 class="font-weight-bolder mb-4">We are Travel Agent</h4>
           <div style="border: 2px solid var(--primary);" class="about-ladder">
             <div class="bg-primary d-flex align-items-center text-white"  style="font-size: 3rem;"><i class="fas fa-plane text-white mr-2"></i>Flight</div>
@@ -245,46 +247,309 @@
       <div class="col-12 py-3">
        
             <div class="col-12 w-100 d-flex flex-column align-items-center">
-              <h1 class="font-weight-bolder text-dark rounded px-1 display-4">PACK AND GO</h1>
+              <h1 class="travel-text font-weight-bolder text-dark rounded px-1 display-4">PACK AND GO</h1>
               <h5 class=" text-dark rounded px-1 font-weight-bolder">Awesome Tours</h5>
             </div>
           
         </div>
       <div class="col-12 ">
         <div class="d-flex w-100 justify-content-around package-container align-items-center">
-          <div class="card" style="width: 25rem;">
+          <div class="card shadow" style="width: 25rem;">
             <img src="../theme/lucas-law-JgH1FY3EqEY-unsplash.jpg" class="card-img-top" alt="..." style="height: 265px;">
             <div class="card-body text-center">
               <p>7 days+6 Night</p>
               <h1 class="card-title font-weight-bolder">NewYork + Paris</h1>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
             </div>
           </div>
-          <div class="card" style="width: 25rem;">
+          <div class="card shadow" style="width: 25rem;">
             <img src="../theme/home-site.jpg" class="card-img-top" alt="..." style="height: 265px;">
             <div class="card-body text-center">
               <p>7 days+6 Night</p>
               <h1 class="card-title font-weight-bolder">NewYork + Paris</h1>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
             </div>
           </div>
-          <div class="card" style="width: 25rem;">
+          <div class="card shadow" style="width: 25rem;">
             <img src="../theme/pexels-ralph-burrows-5035655.jpg" class="card-img-top" alt="..." style="height: 265px;">
             <div class="card-body text-center">
               <p>7 days+6 Night</p>
               <h1 class="card-title font-weight-bolder">NewYork + Paris</h1>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row travelPath">
+      <div class="col-12 py-3">
+       
+        <div class=" col-12 w-100 d-flex flex-column align-items-center">
+          <h1 class="travel-text font-weight-bolder text-white rounded px-1 display-4">TRUSTED SINCE IN 2001</h1>
+          <h5 class=" text-white rounded px-1 font-weight-bolder">GO EXPLOORE</h5>
+        </div>
+      
+      </div>
+      <div class="col-12 responsive">
+        <div>
+          <div class="card travelCard" style="width: 400px;position: relative;height: 510px;">
+            <img src="../theme/philippe-bourhis-zVqTdOEhztI-unsplash.jpg" class="card-img-top travelImage" alt="...">
+            <div class="card-body text-center">
+              <a href="#" class="btn btn-primary travelRowBtn">Go somewhere</a>
+              <h2 class="card-title">Some quick example</h2>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card travelCard shadow" style="width:400px;position: relative;height: 510px;">
+            <img src="../theme/pexels-krishnakant-mahamuni-1201179.jpg" class="card-img-top travelImage" alt="...">
+            <div class="card-body text-center">
+              <a href="#" class="btn btn-primary travelRowBtn">Go somewhere</a>
+              <h2 class="card-title">Some quick example</h2>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card travelCard shadow" style="width:400px;position: relative;height: 510px;">
+            <img src="../theme/domi-chung-9alDwYeAdN4-unsplash.jpg" class="card-img-top travelImage" alt="...">
+            <div class="card-body text-center">
+              <a href="#" class="btn btn-primary travelRowBtn">Go somewhere</a>
+              <h2 class="card-title">Some quick example</h2>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card travelCard shadow" style="width:400px;position: relative;height: 510px;">
+            <img src="../theme/pexels-dirk-de-backer-870799.jpg" class="card-img-top travelImage" alt="...">
+            <div class="card-body text-center">
+              <a href="#" class="btn btn-primary travelRowBtn">Go somewhere</a>
+              <h2 class="card-title">Some quick example</h2>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card travelCard shadow" style="width:400px;position: relative;height: 510px;">
+            <img src="../theme/sergio-souza-nw5OaAtqI34-unsplash.jpg" class="card-img-top travelImage" alt="...">
+            <div class="card-body text-center">
+              <a href="#" class="btn btn-primary travelRowBtn">Go somewhere</a>
+              <h2 class="card-title">Some quick example</h2>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="row customerReview-row bg-dark">
+      <div class="col-12">
+        <div class="review">
+          <div class="d-flex flex-column justify-content-center align-items-center p-3 text-white">
+            <h1 class="font-weight-bolder">Customer Reviews</h1>
+            <h2>We Are Travel Agent</h2>
+            <p class="text-center w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Praesentium temporibus ab est aliquam aliquid provident atque,
+                non nesciunt vitae cupiditate,
+               rerum omnis consequatur repellat! Assumenda dolorum eligendi ut quo provident.
+               Praesentium temporibus ab est aliquam aliquid provident atque,
+               non nesciunt vitae cupiditate,
+              rerum omnis consequatur repellat! Assumenda dolorum eligendi ut quo provident
+              Praesentium temporibus ab est aliquam aliquid provident atque,
+              non nesciunt vitae cupiditate,
+             rerum omnis consequatur repellat! Assumenda dolorum eligendi ut quo provident
+            </p>
+            <div class="">
+              <i class="fas far fa-star text-warning"></i>
+              <i class="fas far fa-star text-warning"></i>
+              <i class="fas far fa-star text-warning"></i>
+              <i class="fas far fa-star text-warning"></i>
+              <i class="fas far fa-star text-warning"></i>
+            </div>
+            <div class="d-flex mt-3">
+              <img src="../theme/1573546632378.jpg" alt="" style="border-radius: 50%;width: 60px;height: 60px;">
+              <div class="d-flex flex-column ml-2">
+                <h4 class="font-weight-bolder">Catherine</h4>
+                <span>Solo Traveller</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center p-3 text-white">
+            <h1 class="font-weight-bolder">Customer Reviews</h1>
+            <h2>We Are Travel Agent</h2>
+            <p class="text-center w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Praesentium temporibus ab est aliquam aliquid provident atque,
+                non nesciunt vitae cupiditate,
+               rerum omnis consequatur repellat! Assumenda dolorum eligendi ut quo provident.
+               Praesentium temporibus ab est aliquam aliquid provident atque,
+               non nesciunt vitae cupiditate,
+              rerum omnis consequatur repellat! Assumenda dolorum eligendi ut quo provident
+              Praesentium temporibus ab est aliquam aliquid provident atque,
+              non nesciunt vitae cupiditate,
+             rerum omnis consequatur repellat! Assumenda dolorum eligendi ut quo provident
+            </p>
+            <div class="">
+              <i class="fas far fa-star text-warning"></i>
+              <i class="fas far fa-star text-warning"></i>
+              <i class="fas far fa-star text-warning"></i>
+              <i class="fas far fa-star text-warning"></i>
+              <i class="fas far fa-star text-warning"></i>
+            </div>
+            <div class="d-flex mt-3">
+              <img src="http://placeimg.com/640/480/cats" alt="" style="border-radius: 50%;width: 60px;height: 60px;">
+              <div class="d-flex flex-column ml-2">
+                <h4 class="font-weight-bolder">Jhon Nathan</h4>
+                <span>Solo Traveller</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="contact-container container-fluid min-vh-100 d-flex flex-column justify-content-around" style="position: relative;">
+    <div class="white-bg"></div>
+    <div class="row" style="z-index: 2050;">
+      <div class="col-12">
+        <div class="text-center">
+          <h1 class="font-weight-bolder">STAT YOUR JOURNEY</h1>
+          <h5 class="font-weight-bolder mb-4">Contact Us</h5>
+          <div><i class="fas fa-map-marker-alt text-warning animate__animated animate__pulse" style="font-size: 5rem;animation-iteration-count: infinite;"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="row contact-bg-white pexels-ralph-burrows-5035655">
+      <div class="col-12 d-flex justify-content-around" style="flex-wrap: wrap;">   
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="d-flex align-items-center">
+          <i class="far fa-envelope" style="font-size: 5rem;"></i>
+          </div>
+          <div class="ml-3">
+            <h2 class="font-weight-bolder">Email</h2>
+            <p class="font-weight-bolder">heinpyaeaung115144@gmail.com</p>
+            <p class="font-weight-bolder">heinpyaeaung115144@gmail.com</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="d-flex align-items-center">
+          <i class="fas fa-phone" style="font-size: 5rem;"></i>
+          </div>
+          <div class="ml-3" style="width: 190px;">
+            <h2 class="font-weight-bolder">Ph NO.</h2>
+            <p class="font-weight-bolder">09/4568733185</p>
+            <p class="font-weight-bolder">09/4568733185</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="d-flex align-items-center">
+          <i class="far fa-address-card" style="font-size: 5rem;"></i>
+          </div>
+          <div class="ml-3">
+            <h2 class="font-weight-bolder">Address</h2>
+            <p class="font-weight-bolder">heinpyaeaung115144@gmail.com</p>
+            <p class="font-weight-bolder">heinpyaeaung115144@gmail.com</p>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+      <div class="row" style="z-index: 2050;">
+        <div class="col-12"  style="margin:20px 0px">
+          <div class="d-flex justify-content-around logo-row">
+            <div> 
+              <i class="font-weight-bolder fab fa-google"></i>
+            </div>
+           <div>
+              <i class="font-weight-bolder fab fa-facebook-f"></i>
+           </div>
+           <div>
+            <i class="font-weight-bolder fab fa-twitter"></i>
+           </div>
+           <div>
+            <i class="font-weight-bolder fab fa-instagram"></i>
+           </div>
+           <div>
+            <i class="font-weight-bolder fab fa-snapchat"></i>
+           </div>
+  
+            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="text-warning font-weight-bolder">Copyright 2021.All Rigth Reserved</h4>
+          <p class="text-warning">developed by heinPyae</p>
+        </div>
+      </div>
+  </div>
+  
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
 <script src="app.js"></script>
+<script src="../slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
+<script>
+  $('.responsive').slick({
+  dots:false,
+  arrows:false,
+  autoplay:false,
+  infinite: true,
+  accessibility:false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 1081,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+$('.review').slick({
+  dots:false,
+  arrows:false,
+  autoplay:false,
+  infinite: true,
+  accessibility:false,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  
+});
+</script>
 </html>
