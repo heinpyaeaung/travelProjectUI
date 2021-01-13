@@ -10,8 +10,12 @@ navBarTogglerTag.addEventListener('click',()=>{
 
 })
 
-{/* <a class="nav-link h5 active" aria-current="page" href="#">HOME</a> */}
-s
+$(window).on('load',function(){
+   $('.loader-container').fadeOut(500,function(){
+     $(this).remove();
+   })
+ })
+
 
 
 

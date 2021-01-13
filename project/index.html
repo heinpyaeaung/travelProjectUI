@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <div class="loader-container">
+    <div class="loader">Loading...</div>
+  </div>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -15,7 +18,7 @@
   <title>HEIN's AGENCY</title>
 </head>
 <body>
-  <div class="home-container container-fluid min-vh-100">
+  <div id="home" class="home-container container-fluid min-vh-100">
     <div class="row">
       <div class="col-12" style="position: relative;">
         <nav class="navbar navbar-expand-lg navbar-light" style="height: 60px;">
@@ -28,22 +31,22 @@
             <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent" style="position: relative;"> 
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="mr-xl-5 mr-lg-2 nav-item nav-home">
-                  <a class="nav-link h5 active" aria-current="page" href="#">HOME</a>
+                  <a class="nav-link h5 active" aria-current="page" href="#home">HOME</a>
                 </li>
                 <li class="mr-xl-5 mr-lg-2 nav-item nav-destination">
-                  <a class="nav-link h5" href="#">DESTINATION</a>
+                  <a class="nav-link h5" href="#destination">DESTINATION</a>
                 </li>
                 <li class="mr-xl-5 mr-lg-2 nav-item nav-discount">
-                  <a class="nav-link h5" href="#">DISCOUNT</a>
+                  <a class="nav-link h5" href="#discount">DISCOUNT</a>
                 </li>
                 <li class="mr-xl-5 mr-lg-2 nav-item nav-about">
-                  <a class="nav-link h5" href="#">ABOUT</a>
+                  <a class="nav-link h5" href="#about">ABOUT</a>
                 </li>
                 <li class="mr-xl-5 mr-lg-2 nav-item nav-blog">
-                  <a class="nav-link h5" href="#">BLOG</a>
+                  <a class="nav-link h5" href="#blog">BLOG</a>
                 </li>
                 <li class="mr-xl-5 mr-lg-2 nav-item nav-contact">
-                  <a class="nav-link h5" href="#">CONTACT</a>
+                  <a class="nav-link h5" href="#contact">CONTACT</a>
                 </li>
               </ul>
               <div class="sliderTag"></div>
@@ -76,7 +79,7 @@
        
     </div>
   </div>
-  <div class="destination-container container-fluid">
+  <div id="destination" class="destination-container container-fluid">
     <div class="row">
       <div class="col-12 col-lg-6 trainImageContainer">
       
@@ -143,7 +146,7 @@
       </div>
     </div>
   </div>
-  <div class="discount-container container-fluid min-vh-100 bg-info d-flex flex-column align-items-center justify-content-center">
+  <div id="discount" class="discount-container container-fluid min-vh-100 bg-info d-flex flex-column align-items-center justify-content-center">
     <div class="row">
       <div class="col-12">
         <div class="col-12 w-100 d-flex flex-column align-items-center">
@@ -215,7 +218,7 @@
       </div>
     </div>
   </div>
-  <div class="about-container container-fluid d-flex align-items-center p-4">
+  <div id="about" class="about-container container-fluid d-flex align-items-center p-4">
     <div class="row">
       <div class="col-12 col-lg-4">
           <div class="about-image"></div>
@@ -242,7 +245,7 @@
       </div>
     </div>
   </div>
-  <div class="blog-container container-fluid" style="background-color: #e9ecef;">
+  <div id="blog" class="blog-container container-fluid" style="background-color: #e9ecef;">
     <div class="row">
       <div class="col-12 py-3">
        
@@ -411,14 +414,14 @@
       </div>
     </div>
   </div>
-  <div class="contact-container container-fluid min-vh-100 d-flex flex-column justify-content-around" style="position: relative;">
+  <div id="contact" class="contact-container container-fluid min-vh-100 d-flex flex-column justify-content-around" style="position: relative;">
     <div class="white-bg"></div>
-    <div class="row" style="z-index: 2050;">
+    <div class="row">
       <div class="col-12">
         <div class="text-center">
           <h1 class="font-weight-bolder">STAT YOUR JOURNEY</h1>
           <h5 class="font-weight-bolder mb-4">Contact Us</h5>
-          <div><i class="fas fa-map-marker-alt text-warning animate__animated animate__pulse" style="font-size: 5rem;animation-iteration-count: infinite;"></i></div>
+          <div><i class="fas fa-map-marker-alt animate__animated animate__pulse" style="font-size: 5rem;animation-iteration-count: infinite;color: rgb(255, 255, 0,0.6);"></i></div>
         </div>
       </div>
     </div>
@@ -458,7 +461,7 @@
         </div>
       </div>
     </div>
-      <div class="row" style="z-index: 2050;">
+      <div class="row">
         <div class="col-12"  style="margin:20px 0px">
           <div class="d-flex justify-content-around logo-row">
             <div> 
@@ -481,9 +484,10 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-12 text-center">
-          <h4 class="text-warning font-weight-bolder">Copyright 2021.All Rigth Reserved</h4>
+          <h4 class="text-warning font-weight-bolder">CopyRight 2021.All Right Reserved</h4>
           <p class="text-warning">developed by heinPyae</p>
         </div>
       </div>
